@@ -1,0 +1,45 @@
+html{
+  background-color: mistyrose;
+}
+.container{
+  display:grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+.container div{
+  background-color: firebrick;
+  height: 100px;
+}
+
+.container div:nth-child(odd){
+  background-color: cyan
+}
+
+.container-2{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1em;
+  row-gap: 1em;
+  grid-auto-rows: minmax(100, auto);
+}
+
+.container-2 div{
+  background-color: firebrick;
+  height: 100px;
+}
+
+.container-2 div:nth-child(odd){
+  background-color: cyan
+}
+
+.nested-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(55px, atuo)
+}
+
+.nested-container div{
+  border: solid black 1px
+}
